@@ -1,13 +1,24 @@
 {
-    "color_and_hello": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "cc65-lynx": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
         "features": {
-            "color": {
-                "favorite": "purple"
+            // "ghcr.io/devcontainers/features/common-utils": {
+            //     "installZsh": false,
+            //     "installOhMyZsh": false,
+            //     "upgradePackages": false
+            // },
+            "cc65": {
+                "version": "latest"
             },
-            "hello": {
-                "greeting": "Greetings"
-            }
+            "sprpck": {},
+            "make_lnx": {}
+        }
+    },
+    "bll": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "lyxass": {},
+            "new_bll": {}
         }
     }
 }

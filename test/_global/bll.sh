@@ -16,17 +16,15 @@ set -e
 # Optional: Import test library bundled with the devcontainer CLI
 source dev-container-features-test-lib
 
-echo -e "The result of the 'color' command will be:\n"
-color
-echo -e "The result of the 'hello' command will be:\n"
-hello
-echo -e "\n"
-
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "check purple is my favorite color" bash -c "color | grep 'my favorite color is purple'"
-check "check I am greeting with 'Greetings'" bash -c "hello | grep 'Greetings, $(whoami)'"
+check "Check lyxass installation" bash -c "lyxass | grep 'tjass/lyxass C-version'"
+check "Check lynxenc installation" bash -c "lynxenc | grep 'usage: lynxenc <plaintext.bin> <encrypted.bin>'"
+check "Check lynxdec installation" bash -c "lynxdec | grep 'usage: lynxdec <encrypted.bin> <plaintext.bin>'"
+check "Check make_lnx installation" bash -c "make_lnx 2>&1 | grep 'Raw image to LNX image convertor V5'"
 
+cd ${BLL_ROOT}/uBLL
+check "Compile uBLL" bash -c "make | grep 'DONE: File converted'"
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.

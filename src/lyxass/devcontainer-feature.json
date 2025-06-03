@@ -1,0 +1,22 @@
+{
+    "name": "lyxass utility",
+    "id": "lyxass",
+    "version": "1.0.0",
+    "description": "Atari Lynx and Jaguar Macro Assembler",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "containerEnv": {
+        "BLL_ROOT": "/usr/src/new_bll"
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

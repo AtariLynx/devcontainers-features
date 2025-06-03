@@ -1,0 +1,32 @@
+{
+    "name": "cc65",
+    "id": "cc65",
+    "version": "1.0.0",
+    "description": "cc65 feature for cross development of 65(C)02 systems",
+    "options": {
+        "version": {
+            "type": "string",
+            "description": "cc65 version:",
+            "enum": [
+                "latest",
+                "2.19",
+                "2.18",
+                "2.17",
+                "2.16",
+                "2.15"
+            ],
+            "default": "latest"
+        }
+    },
+    "containerEnv": {
+        "CC65_HOME": "/usr/share/cc65",
+        "CC65_INC": "/usr/share/cc65/include",
+        "CA65_INC": "/usr/share/cc65/asminc",
+        "LD65_CFG": "/usr/share/cc65/cfg",
+        "LD65_LIB": "/usr/share/cc65/lib",
+        "LD65_OBJ": "/usr/share/cc65/obj"
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

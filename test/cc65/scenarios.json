@@ -1,0 +1,10 @@
+{
+    "version": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "cc65": {
+                "version": "latest"
+            }
+        }
+    }
+}

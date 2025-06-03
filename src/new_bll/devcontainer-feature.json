@@ -1,0 +1,23 @@
+{
+    "name": "new_bll library",
+    "id": "new_bll",
+    "version": "1.0.0",
+    "description": "Modern BLL library for Atari Lynx development with lyxass",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "containerEnv": {
+        "BLL_ROOT": "/usr/src/new_bll"
+    },
+    "postCreateCommand": "sudo chown -R $(whoami):$(whoami) $BLL_ROOT",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

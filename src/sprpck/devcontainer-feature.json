@@ -1,0 +1,12 @@
+{
+    "name": "Sprpck Atari Lynx sprite utility",
+    "id": "sprpck",
+    "version": "1.0.0",
+    "description": "Sprite utility for Atari Lynx game development",
+    "options": {
+        
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

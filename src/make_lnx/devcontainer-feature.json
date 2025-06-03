@@ -1,0 +1,10 @@
+{
+    "name": "make_lnx utility",
+    "id": "make_lnx",
+    "version": "1.0.1",
+    "description": "make_lnx utility for LNX headers",
+    "options": { },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

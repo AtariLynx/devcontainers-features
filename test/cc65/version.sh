@@ -10,7 +10,7 @@ source dev-container-features-test-lib
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "execute command" bash -c "color | grep 'my favorite color is gold'"
+check "cc65 version" bash -c "cc65 --version 2>&1 | grep 'cc65 V2.19 - Git'"
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.
