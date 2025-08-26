@@ -2,11 +2,6 @@
     "cc65-lynx": {
         "image": "mcr.microsoft.com/devcontainers/base:alpine",
         "features": {
-            // "ghcr.io/devcontainers/features/common-utils": {
-            //     "installZsh": false,
-            //     "installOhMyZsh": false,
-            //     "upgradePackages": false
-            // },
             "cc65": {
                 "version": "latest"
             },
