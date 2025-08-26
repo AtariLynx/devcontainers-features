@@ -7,7 +7,7 @@ make_lnx utility for LNX headers
 
 ```json
 "features": {
-    "ghcr.io/AtariLynx/devcontainers/make_lnx:1": {}
+    "ghcr.io/AtariLynx/devcontainers-features/make_lnx:1": {}
 }
 ```
 
@@ -15,10 +15,10 @@ make_lnx utility for LNX headers
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version to install. | string | latest |
+
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/AtariLynx/devcontainers/blob/main/src/features/make_lnx/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/AtariLynx/devcontainers-features/blob/main/src/make_lnx/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

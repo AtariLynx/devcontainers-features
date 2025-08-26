@@ -1,5 +1,5 @@
 
-# cc65suite (cc65suite)
+# cc65 (cc65)
 
 cc65 feature for cross development of 65(C)02 systems
 
@@ -7,7 +7,7 @@ cc65 feature for cross development of 65(C)02 systems
 
 ```json
 "features": {
-    "ghcr.io/AtariLynx/devcontainers/cc65suite:1": {}
+    "ghcr.io/AtariLynx/devcontainers-features/cc65:1": {}
 }
 ```
 
@@ -15,10 +15,10 @@ cc65 feature for cross development of 65(C)02 systems
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| cc65Version | cc65 version: | string | latest |
+| version | cc65 version: | string | latest |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/AtariLynx/devcontainers/blob/main/src/features/cc65suite/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/AtariLynx/devcontainers-features/blob/main/src/cc65/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -7,7 +7,7 @@ Sprite utility for Atari Lynx game development
 
 ```json
 "features": {
-    "ghcr.io/AtariLynx/devcontainers/sprpck:1": {}
+    "ghcr.io/AtariLynx/devcontainers-features/sprpck:1": {}
 }
 ```
 
@@ -21,4 +21,4 @@ Sprite utility for Atari Lynx game development
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/AtariLynx/devcontainers/blob/main/src/features/sprpck/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/AtariLynx/devcontainers-features/blob/main/src/sprpck/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
