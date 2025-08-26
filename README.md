@@ -1,24 +1,36 @@
-# Dev Container Features: Self Authoring Template
+# Atari Lynx development features for devcontainers
 
-> This repo provides a starting point and example for creating your own custom [dev container Features](https://containers.dev/implementors/features/), hosted for free on GitHub Container Registry.  The example in this repository follows the [dev container Feature distribution specification](https://containers.dev/implementors/features-distribution/).  
->
-> To provide feedback to the specification, please leave a comment [on spec issue #70](https://github.com/devcontainers/spec/issues/70). For more broad feedback regarding dev container Features, please see [spec issue #61](https://github.com/devcontainers/spec/issues/61).
+- [cc65](https://github.com/cc65/cc65)
+  Full suite of cc65 tools and only target libraries for Atari Lynx built. It is optimized and not intended for use with other platforms.
+- [lynxenc](https://github.com/42Bastian/new_bll/tree/master/lynxenc)
+  Encryption and decryption tool with CLI for Atari Lynx  
+- [lyxass](https://github.com/42Bastian/lyxass)
+  Macro assembler of 6502, 65SC02 and 65C02 code intended for Atari Lynx
+- make_lnx
+  Tool to create LNX files from header-less (raw) Atari Lynx rom files (*.lyx)  
+  Based on included C source code
+- [new_bll](https://github.com/42Bastian/new_bll)
+  Beyond Lynx Lines tools, macros and demos for Atari Lynx. Best used with lyxass assembler 
+- [sprpck](https://github.com/42Bastian/sprpck)
+  Sprite packer to generate binary sprite data from Windows Bitmap files (*.bmp)
 
-## Example Contents
+In addition there are two non-Atari Lynx related features that might prove useful for cc65 developers on other platforms:
 
-This repository contains a _collection_ of two Features - `hello` and `color`. These Features serve as simple feature implementations.  Each sub-section below shows a sample `devcontainer.json` alongside example usage of the Feature.
+- [AtariSIO](https://github.com/HiassofT/AtariSIO)
+- [Exomizer](https://bitbucket.org/magli143/exomizer)
 
-### `hello`
-
-Running `hello` inside the built container will print the greeting provided to it via its `greeting` option.
+You can add these features by specifying them in your `devcontainer.json` file.
 
 ```jsonc
 {
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "image": "ghcr.io/atarilynx/templates/cc65:latest",
     "features": {
-        "ghcr.io/devcontainers/feature-starter/hello:1": {
-            "greeting": "Hello"
-        }
+		"ghcr.io/atarilynx/devcontainer-features/cc65:latest": {},
+		"ghcr.io/atarilynx/devcontainer-features/lynxenc:latest": {},
+		"ghcr.io/atarilynx/devcontainer-features/lyxass:latest": {},
+		"ghcr.io/atarilynx/devcontainer-features/make_lnx:latest": {},
+		"ghcr.io/atarilynx/devcontainer-features/new_bll:latest": {},
+		"ghcr.io/atarilynx/devcontainer-features/sprpck:latest": {}
     }
 }
 ```

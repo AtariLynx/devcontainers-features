@@ -11,6 +11,6 @@ cd cc65
 if [ "${VERSION}" != "latest" ]; then
     git checkout tags/V${VERSION} -b "tag-${VERSION}"
 fi
-nice make -j2
-make install PREFIX=/usr prefix=/usr
+nice make -j2 TARGETS=lynx
+make install PREFIX=/usr prefix=/usr TARGETS=lynx
 rm -rf ${SOURCE_DIR}/cc65
